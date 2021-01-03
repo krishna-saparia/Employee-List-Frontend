@@ -13,18 +13,7 @@ export class EmployeeListComponent implements OnInit {
   constructor(private employeeService: EmployeeService) { }
 
   ngOnInit(): void {
-    // this.employees = [{
-    //   id: 1,
-    //   firstName: 'krishna',
-    //   lastName: 'Saparia',
-    //   emailID: 'k12@gmail.com'
-    // },
-    //   {
-    //     id: 2,
-    //     firstName: 'ishna',
-    //     lastName: 'paria',
-    //     emailID: 'k2@gmail.com'
-    //   }];
+
     this.getEmployees();
   }
   // tslint:disable-next-line:typedef

@@ -5,12 +5,14 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule} from '@angular/forms';
+import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 // @ts-ignore
 // @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    CreateEmployeeComponent
   ],
   imports: [
     BrowserModule,
