@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Employee-List-Frontend"
+    }
+  },
+  "defaultProject": "Employee-List-Frontend",
+  "cli": {
+    "analytics": "6b4ffeda-3772-4f44-86c1-46809f2e8349"
+  }
 }
