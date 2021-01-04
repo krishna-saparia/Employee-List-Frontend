@@ -6,13 +6,15 @@ import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule} from '@angular/forms';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 // @ts-ignore
 // @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeListComponent,
-    CreateEmployeeComponent
+    CreateEmployeeComponent,
+    UpdateEmployeeComponent
   ],
   imports: [
     BrowserModule,
