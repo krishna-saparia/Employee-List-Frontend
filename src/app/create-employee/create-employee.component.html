@@ -26,8 +26,9 @@
     <input type="text" class="form-control" id="emailID" formControlName="emailID"
            [(ngModel)]="employee.emailID" name="emailID"
            [ngClass]="{ 'is-invalid': form.get('emailID').touched && form.get('emailID').invalid }"/>
-    <div class="invalid-feedback">
-      <div>Email ID is required.</div>
+    <div *ngIf="form.get('emailID').touched && form.get('emailID').invalid" class="invalid-feedback">
+      <div *ngIf="form.get('emailID').errors.required"> Email ID is required.</div>
+      <div *ngIf="form.get('emailID').errors.email">Email must be valid email address.</div>
     </div>
   </div>
 
