@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Employee} from '../employee';
 import {EmployeeService} from '../employee.service';
 import {Router} from '@angular/router';
+import {FormBuilder, FormControl, FormGroup, Validator, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-create-employee',
@@ -10,6 +11,12 @@ import {Router} from '@angular/router';
 })
 export class CreateEmployeeComponent implements OnInit {
   employee: Employee = new Employee();
+  form = new FormGroup({
+    first_name: new FormControl('', Validators.required),
+    last_name: new FormControl('', Validators.required),
+    emailID: new FormControl('', Validators.required)
+  });
+  submit = false;
   constructor(private employeeService: EmployeeService , private router: Router) { }
 
   ngOnInit(): void {
