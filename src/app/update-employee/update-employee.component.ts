@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {EmployeeService} from '../employee.service';
 import {Employee} from '../employee';
 import {ActivatedRoute, Router} from '@angular/router';
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-update-employee',
@@ -11,6 +12,11 @@ import {ActivatedRoute, Router} from '@angular/router';
 export class UpdateEmployeeComponent implements OnInit {
   id: number;
   employee: Employee = new Employee();
+  form = new FormGroup({
+    first_name: new FormControl('', Validators.required),
+    last_name: new FormControl('', Validators.required),
+    emailID: new FormControl('', [Validators.required , Validators.email])
+  });
   constructor(private employeeService: EmployeeService , private activeRoute: ActivatedRoute , private router: Router) { }
 
   ngOnInit(): void {
@@ -30,5 +36,6 @@ export class UpdateEmployeeComponent implements OnInit {
       this.goToEmployeeList();
     } ,
       error => console.log(error));
+    alert(JSON.stringify(this.form.value));
   }
 }

@@ -16,7 +16,6 @@ export class CreateEmployeeComponent implements OnInit {
     last_name: new FormControl('', Validators.required),
     emailID: new FormControl('', [Validators.required , Validators.email])
   });
-  submit = false;
   constructor(private employeeService: EmployeeService , private router: Router) { }
 
   ngOnInit(): void {
