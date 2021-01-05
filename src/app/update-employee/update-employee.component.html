@@ -28,7 +28,7 @@
              [ngClass]="{ 'is-invalid': form.get('emailID').touched && form.get('emailID').invalid }"/>
       <div *ngIf="form.get('emailID').touched && form.get('emailID').invalid" class="invalid-feedback">
         <div *ngIf="form.get('emailID').errors.required"> Email ID is required.</div>
-        <div *ngIf="form.get('emailID').errors.email">Email must be valid email address.</div>
+        <div *ngIf="form.get('emailID').errors.email">Email Address should be valid email address.</div>
       </div>
     </div>
     <div class="form-group">
