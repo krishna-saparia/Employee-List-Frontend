@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule} from '@angular/forms';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 // @ts-ignore
 // @ts-ignore
 @NgModule({
@@ -14,7 +15,8 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
     AppComponent,
     EmployeeListComponent,
     CreateEmployeeComponent,
-    UpdateEmployeeComponent
+    UpdateEmployeeComponent,
+    EmployeeDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -22,6 +22,9 @@ export class EmployeeListComponent implements OnInit {
     this.employeeService.getEmployeeList().subscribe(data => {
       this.employees = data;
     });
+  }   // view employee
+  employeeDetails(id: number){
+    this.router.navigate(['employee-details', id]);
   }
   // tslint:disable-next-line:typedef
   updateEmployee(id: number){
