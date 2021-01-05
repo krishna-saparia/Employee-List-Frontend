@@ -23,6 +23,7 @@ export class EmployeeListComponent implements OnInit {
       this.employees = data;
     });
   }   // view employee
+  // tslint:disable-next-line:typedef
   employeeDetails(id: number){
     this.router.navigate(['employee-details', id]);
   }
