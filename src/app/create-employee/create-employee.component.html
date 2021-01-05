@@ -1,6 +1,6 @@
 <div class="col-md-8 offset-md-3">
 <h3> Create Employee </h3>
-<form (ngSubmit)="onSubmit()" [formGroup]="form">
+<form [formGroup]="form" (ngSubmit)="form.valid && onSubmit()">
   <div class="form-group">
     <label>First Name</label>
     <input id="first_name" type="text" class="form-control"
@@ -31,7 +31,8 @@
       <div *ngIf="form.get('emailID').errors.email">Email must be valid email address.</div>
     </div>
   </div>
-
-  <button class="btn btn-success" type="submit">Submit</button>
+  <div class="form-group">
+    <button class="btn btn-success" type="submit" [disabled]="!form.valid">Submit</button>
+  </div>
 </form>
 </div>

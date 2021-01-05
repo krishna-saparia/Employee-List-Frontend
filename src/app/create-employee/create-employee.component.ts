@@ -38,5 +38,6 @@ export class CreateEmployeeComponent implements OnInit {
   onSubmit(){
     console.log(this.employee);
     this.saveEmployee();
+    alert(JSON.stringify(this.form.value));
   }
 }
