@@ -1,3 +1,6 @@
+# Employee List
+This Web app gets data from the backend side from Spring Boot And H2 Database.
+
 # EmployeeListFrontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
@@ -21,6 +24,33 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Concepts Used
+
+
+
+```bash
+String Interpolation
+Data Binding
+NgModel
+NgClass
+*ngFor
+*ngIf
+Form group
+Form control
+Validators(forms)
+Router
+Navigate
+ActivatedRoute : snapshot
+Observable
+Subscribe
+Pipes
+Service
+App routing
+Components
+Routerlink
+Router Outlet
+```
 
 ## Further help
 
