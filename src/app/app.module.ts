@@ -8,6 +8,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { SearchFilterPipe } from './search-filter.pipe';
 // @ts-ignore
 // @ts-ignore
 @NgModule({
@@ -16,7 +17,8 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
     EmployeeListComponent,
     CreateEmployeeComponent,
     UpdateEmployeeComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    SearchFilterPipe
   ],
   imports: [
     BrowserModule,
