@@ -6,6 +6,7 @@
       <input id="first_name" type="text" class="form-control"
              [(ngModel)]="employee.first_name" formControlName="first_name" name="first_name"
              [ngClass]="{ 'is-invalid': form.get('first_name').touched && form.get('first_name').invalid }"/>
+      <!--Touched and Invalids are validators -->
       <div class="invalid-feedback">
         <div>First Name is required.</div>
       </div>
@@ -26,6 +27,7 @@
       <input type="text" class="form-control" id="emailID" formControlName="emailID"
              [(ngModel)]="employee.emailID" name="emailID"
              [ngClass]="{ 'is-invalid': form.get('emailID').touched && form.get('emailID').invalid }"/>
+      <!--    Use *ngIf to validate three different possiblity to verify email Address-->
       <div *ngIf="form.get('emailID').touched && form.get('emailID').invalid" class="invalid-feedback">
         <div *ngIf="form.get('emailID').errors.required"> Email ID is required.</div>
         <div *ngIf="form.get('emailID').errors.email">Email Address should be valid email address.</div>

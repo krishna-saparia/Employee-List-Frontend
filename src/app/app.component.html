@@ -1,28 +1,27 @@
 <nav class="navbar navbar-expand-sm navbar-dark info-color">
+
+<!--  RouterLink : makes that element a link that initiates navigation to a route-->
   <a routerLink="employees" routerLinkActive="active" class="navbar-brand" >Employee List</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-
       <li class="nav-item">
+
+        <!--  RouterLink : makes that element a link that initiates navigation to a route-->
         <a routerLink="create-employee" routerLinkActive="active" class="nav-link waves-effect waves-light" >Add Employee</a>
       </li>
     </ul>
-<!--    <form class="form-inline">-->
-<!--      <div class="md-form my-0">-->
-<!--        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
-<!--      </div>-->
-<!--    </form>-->
   </div>
 </nav>
-
 <div class="container">
+
+<!--  To target multiple outlets in the same RouterLink directive.-->
   <router-outlet></router-outlet>
 </div>
 <footer class="footer">
   <div class = "container">
-    <span>All Rights reserved 2021 @Krishna_Saparia</span>
+    <span>All Rights reserved 2021 @Everyone</span>
   </div>
 </footer>

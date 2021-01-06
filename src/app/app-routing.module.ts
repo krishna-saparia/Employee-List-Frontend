@@ -6,9 +6,11 @@ import {CreateEmployeeComponent} from './create-employee/create-employee.compone
 import {UpdateEmployeeComponent} from './update-employee/update-employee.component';
 import {EmployeeDetailsComponent} from './employee-details/employee-details.component';
 
+// Routes for app - navigation through various component
 const routes: Routes = [
   { path: 'employees', component: EmployeeListComponent },
   { path: 'create-employee', component: CreateEmployeeComponent},
+  // An initial empty path '/'  directly redirects to 'employee'.
   { path: '', redirectTo: 'employees', pathMatch: 'full'},
   { path: 'update-employee/:id' , component: UpdateEmployeeComponent},
   { path: 'employee-details/:id', component: EmployeeDetailsComponent}
